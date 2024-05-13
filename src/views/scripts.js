@@ -21,7 +21,7 @@ function handleSubmit(event) {
     }).then(data => {
         const resultElement = document.getElementById('result');
         const firstElement = data.payload[0];
-        resultElement.innerHTML = `<p>Status: Sucesso</p><p>Resultado: ${JSON.stringify(firstElement)}</p>`;
+        resultElement.innerHTML = `<p>Gasto calórico: ${JSON.stringify(firstElement)}</p>`;
     }).catch(error => {
         alert('Erro: ' + error.message);
     });
